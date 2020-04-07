@@ -1,15 +1,42 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+body {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(coffee.jpg);
+    background-position: center center absolute;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+header h1 {
+    color: #38220f;
+    font-weight: bolder;
+    padding: 0 10px;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    color: #fff;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #coffees p{
-    margin-top: 9px;
-    padding-left: 5px;
-    color: gray;
+    margin-top: 4px;
+    padding-left: px;
+    color: #fff;
+}
+
+.coffee p {
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+form .custom-select, form .form-control {
+    background: transparent;
+    border: 1px solid #fff;
 }

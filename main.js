@@ -1,10 +1,10 @@
 "use strict";
 
 function renderCoffee(coffee) {
-    var html = '<div id="coffee-list" class="d-flex coffee" style="width: 260px; height: 50px;">';
+    var html = '<div id="coffee-list" class="coffee mb-5 mt-2" style="width: 260px; height: 60px;">';
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
-    html += '</div>';
+    html += '<div>.........................................................</div></div>';
 
     return html;
 }
@@ -44,8 +44,10 @@ function search () {
 
 function addCoffee (e) {
     e.preventDefault();
+    console.log(coffeeAddition);
     coffees.push({name: coffeeAddition.value , roast: roastAddition.value});
     updateCoffees(e);
+    this.form.reset();
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
